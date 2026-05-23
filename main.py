@@ -1,11 +1,16 @@
-from docling.document_converter import DocumentConverter
+from pathlib import Path
+from docling.datamodel.base_models import InputFormat
+from docling.datamodel.pipeline_options import EasyOcrOptions, PdfPipelineOptions
+from docling.document_converter import DocumentConverter, PdfFormatOption
 
+import torch
+print("CUDA Available:", torch.cuda.is_available())
 
-source = "D:\documents\github\Llm-ocr\llm ocr\pdf_idk.pdf" 
+source = "pdf_idk.pdf" 
 
-converter = DocumentConverter()
+converter= DocumentConverter()
 
-result = converter.convert(source)
+result=converter.convert(source)
 
 markdown_output = result.document.export_to_markdown()
 
