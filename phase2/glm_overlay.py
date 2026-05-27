@@ -201,61 +201,32 @@ def overlay_text_invisible(page, zone, pdf_dims, pil_img, dpi=200):
 
     fontsize_px = _calc_fontsize_px(text, zone_w_px, zone_h_px)
     fontsize_px = int(fontsize_px)
-
-    try:
-        font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", fontsize_px)
-    except Exception:
-        font = ImageFont.load_default()
-
-    # Compute text drawing position (top-left) exactly as visible overlay does
-    # We reuse the same logic as in overlay_text_on_image and _draw_centered_text
-    # but we compute the top-left (x, y) of the text's bounding box in image coordinates.
-    # We'll create a temporary draw object to measure the text.
-    dummy_img = Image.new("RGB", (1, 1))
-    dummy_draw = ImageDraw.Draw(dummy_img)
-    try:
-        tb = dummy_draw.textbbox((0, 0), text, font=font)
-        text_w = tb[2] - tb[0]
-        text_h = tb[3] - tb[1]
-    except Exception:
-        text_w = int(len(text) * fontsize_px * 0.6)  # rough fallback
-        text_h = fontsize_px
-
-    # Center the text in the zone (same as visible overlay)
-    x = px1 + max(0, (zone_w_px - text_w) / 2)
-    y = py1 + max(0, (zone_h_px - text_h) / 2)
-
-    # Get font metrics (ascent, descent) in pixels
-    try:
-        ascent, descent = font.getmetrics()
-    except Exception:
-        ascent = int(fontsize_px * 0.8)
-        descent = int(fontsize_px * 0.2)
-
-    # In image coordinates (top-left origin, y increases downward), the baseline is at:
-    #   baseline_y = y + ascent
-    # Because the top-left of the text's bounding box is at (x, y), and the baseline is
-    # 'ascent' pixels below the top of the bounding box.
-    baseline_y_img = y + ascent
-
-    # Convert from image coordinates to PDF coordinates:
-    #   Image: top-left origin, y increases downward
-    #   PDF: bottom-left origin, y increases upward
-    #   x_pdf = x_img * (pdf_width / img_width)
-    #   y_pdf = pdf_height - (y_img * (pdf_height / img_height))
-    #   But note: we want the baseline point, so we use baseline_y_img for y_img.
-    x_pdf = x * (pw / img_w)
-    y_pdf = ph - (baseline_y_img * (ph / img_h))
-
-    # Convert font size from pixels to points (PDF uses points, 72 DPI)
-    fontsize_pt = fontsize_px * 72 / dpi
     font_file = "C:/Windows/Fonts/arial.ttf"
+    fontsize_pt = fontsize_px * 72 / dpi
 
-    # Insert the text at the baseline point with zero opacity (invisible but selectable)
+    # Use PyMuPDF's own font metrics for positioning (matches visible overlay centering)
+    fitz_font = fitz.Font(fontfile=font_file)
+    text_length = fitz_font.text_length(text, fontsize=fontsize_pt)
+    ascender = fitz_font.ascender / fitz_font.units_per_em * fontsize_pt
+    descender = fitz_font.descender / fitz_font.units_per_em * fontsize_pt
+
+    # Zone bounds in PDF coordinates
+    zone_x1 = px1 * (pw / img_w)
+    zone_y1 = ph - (py2 * (ph / img_h))
+    zone_x2 = px2 * (pw / img_w)
+    zone_y2 = ph - (py1 * (ph / img_h))
+    zone_w = zone_x2 - zone_x1
+    zone_h = zone_y2 - zone_y1
+
+    # Center text in zone
+    x_pdf = zone_x1 + max(0, (zone_w - text_length) / 2)
+    y_pdf = zone_y1 + (zone_h + ascender + descender) / 2
+
     page.insert_text(
         (x_pdf, y_pdf),
         text,
         fontsize=fontsize_pt,
+        fontname="helv",
         fontfile=font_file,
         fill_opacity=0,
         stroke_opacity=0,
