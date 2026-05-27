@@ -1,0 +1,13 @@
+## LM Studio prompts for Phase 3 image/chart zone recognition.
+## Users can edit these prompts to customize behavior for their documents.
+## Sections start with a single # section_name.
+## Valid section names: image, image_modification, chart
+
+# image
+Reply with one short phrase listing components and values only. Example: "R=5Ω, V=5V"
+
+# image_modification
+Reply with one short phrase listing changed components and values only.
+
+# chart
+One short phrase summarizing the chart.

@@ -1,0 +1,67 @@
+# Zone segmentation configuration
+# Tune these values to match your handwriting and workflow.
+# The LLM can read this file, compare output to manual zoning, and adjust values.
+
+# --- PDF source ---
+PDF_PATH = pdf_idk.pdf
+PDF_FILENAME = pdf_idk.pdf
+
+# --- Object filtering ---
+MIN_AREA = 50
+INK_THRESHOLD = 220
+MIN_DRAWING_PIXELS = 80
+
+# --- Clustering ---
+Y_GAP = 18
+X_GAP = 35
+
+# --- Box detection ---
+BOX_MARGIN_PT = 4
+
+# --- Text-drawing suppression ---
+TEXT_DRAWING_OVERLAP = 0.25
+TEXT_BOX_OVERLAP = 0.30
+
+# --- Vertical band merging (text zones only) ---
+VBAND_Y_GAP = 20
+VBAND_X_OVERLAP = 0.08
+
+# --- Oversized zone guard ---
+MAX_ZONE_HEIGHT_FRAC = 0.60
+GUARD_SPLIT_GAP = 12
+
+# --- Neighbor merging (all zones, height-guarded) ---
+MERGE_Y_GAP = 16
+MERGE_X_OVERLAP = 0.03
+MERGE_X_GAP = 12
+MERGE_MAX_H = 500
+
+# --- Drawing-text merging (circuit + adjacent text) ---
+MERGE_H_GAP = 35
+MERGE_H_Y_OVERLAP = 0.30
+
+# --- Uncovered ink ---
+UNCOVERED_MIN_PIXELS = 30
+UNCOVERED_MIN_AREA = 50
+
+# --- Tiny zone filter ---
+TINY_MIN_AREA = 50
+TINY_MIN_W = 10
+TINY_MIN_H = 8
+
+# --- Divider line filter ---
+DIVIDER_MAX_H = 8
+DIVIDER_MIN_W_FRAC = 0.40
+
+# --- Ink color relabeling ---
+COLOR_THRESHOLD = 40
+BLUE_BIAS = 20
+COLORED_RATIO = 0.25
+
+# --- LM Studio ---
+LM_STUDIO_HOST = http://100.76.47.104:1234
+LM_VERIFY = True
+
+# --- Output ---
+OUTPUT_PATH = output.md
+LLM_OUTPUT_PATH = llm_output.md

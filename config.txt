@@ -1,0 +1,21 @@
+# GLM-OCR Pipeline configuration
+# Set values here to override defaults. CLI args take precedence.
+
+# --- PDF processing ---
+PDF_DPI = 200
+
+# --- Layout detection ---
+LAYOUT_DEVICE = cpu
+LAYOUT_THRESHOLD = 0.3
+
+# --- LM Studio (fallback for circuits/images/OCR correction) ---
+LM_STUDIO_HOST = http://100.76.47.104:1234/v1
+
+# --- LM Studio prompts ---
+LM_PROMPTS_FILE = lm_prompts.txt
+LM_STUDIO_TIMEOUT = 120
+LM_STUDIO_MAX_TOKENS = 512
+
+# --- Output ---
+OUTPUT_PATH = output.md
+LLM_OUTPUT_PATH = llm_output.md

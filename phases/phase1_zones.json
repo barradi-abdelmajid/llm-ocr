@@ -1,0 +1,1401 @@
+{
+  "pdf_stem": "pdf_idk",
+  "pdf_path": "D:\\documents\\codex\\llm\\pdf_idk.pdf",
+  "num_pages": 7,
+  "pdf_dims": [
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    }
+  ],
+  "zones": [
+    {
+      "page": 0,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        45,
+        30,
+        120,
+        64
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        554,
+        69,
+        637,
+        109
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        401,
+        70,
+        490,
+        112
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        192,
+        84,
+        280,
+        110
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        74,
+        123,
+        165,
+        168
+      ]
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        241,
+        123,
+        325,
+        163
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        402,
+        126,
+        482,
+        150
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        572,
+        127,
+        617,
+        146
+      ]
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        524,
+        130,
+        548,
+        145
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        650,
+        192,
+        790,
+        323
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        405,
+        206,
+        487,
+        305
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        542,
+        206,
+        632,
+        308
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        184,
+        207,
+        361,
+        307
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        65,
+        212,
+        146,
+        260
+      ]
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        84,
+        341,
+        182,
+        379
+      ]
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        241,
+        349,
+        291,
+        373
+      ]
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        613,
+        349,
+        682,
+        375
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        379,
+        350,
+        504,
+        391
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        57,
+        405,
+        141,
+        464
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        58,
+        405,
+        257,
+        465
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        601,
+        406,
+        728,
+        448
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        300,
+        413,
+        434,
+        446
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        772,
+        413,
+        950,
+        449
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        467,
+        421,
+        570,
+        445
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        54,
+        521,
+        207,
+        586
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        276,
+        539,
+        431,
+        586
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        44,
+        608,
+        271,
+        692
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        332,
+        650,
+        520,
+        692
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        504,
+        715,
+        727,
+        751
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        222,
+        719,
+        294,
+        745
+      ]
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        56,
+        721,
+        160,
+        749
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        504,
+        755,
+        728,
+        793
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        45,
+        772,
+        220,
+        873
+      ]
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        247,
+        778,
+        402,
+        890
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        504,
+        803,
+        727,
+        840
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        484,
+        846,
+        548,
+        869
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        700,
+        847,
+        787,
+        870
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        434,
+        871,
+        566,
+        906
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        627,
+        874,
+        808,
+        908
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        433,
+        908,
+        565,
+        942
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        628,
+        913,
+        808,
+        948
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        432,
+        946,
+        565,
+        982
+      ]
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        628,
+        953,
+        807,
+        987
+      ]
+    },
+    {
+      "page": 1,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        49,
+        15,
+        164,
+        39
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        95,
+        52,
+        694,
+        113
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        96,
+        126,
+        658,
+        148
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        98,
+        158,
+        523,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        98,
+        194,
+        977,
+        254
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        106,
+        264,
+        514,
+        288
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        474,
+        344,
+        827,
+        373
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        70,
+        346,
+        127,
+        375
+      ]
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        84,
+        376,
+        342,
+        466
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        588,
+        397,
+        683,
+        463
+      ]
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        387,
+        398,
+        498,
+        460
+      ]
+    },
+    {
+      "page": 1,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        50,
+        492,
+        589,
+        517
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        130,
+        518,
+        279,
+        533
+      ]
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        198,
+        536,
+        451,
+        603
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        248,
+        640,
+        408,
+        652
+      ]
+    },
+    {
+      "page": 1,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        264,
+        662,
+        389,
+        675
+      ]
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        243,
+        733,
+        495,
+        839
+      ]
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        550,
+        737,
+        631,
+        762
+      ]
+    },
+    {
+      "page": 1,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        547,
+        770,
+        804,
+        816
+      ]
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        5,
+        774,
+        224,
+        1000
+      ]
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        297,
+        855,
+        477,
+        939
+      ]
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        0,
+        1,
+        325,
+        51
+      ]
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        0,
+        4,
+        768,
+        324
+      ]
+    },
+    {
+      "page": 2,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        58,
+        331,
+        148,
+        359
+      ]
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        52,
+        379,
+        653,
+        495
+      ]
+    },
+    {
+      "page": 2,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        45,
+        510,
+        324,
+        536
+      ]
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        45,
+        557,
+        897,
+        728
+      ]
+    },
+    {
+      "page": 3,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        50,
+        11,
+        459,
+        34
+      ]
+    },
+    {
+      "page": 3,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        50,
+        38,
+        205,
+        56
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        91,
+        67,
+        651,
+        153
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        61,
+        185,
+        301,
+        449
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        60,
+        186,
+        298,
+        269
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        351,
+        255,
+        805,
+        435
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        435,
+        456,
+        717,
+        534
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        443,
+        560,
+        758,
+        641
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        459,
+        655,
+        663,
+        778
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        453,
+        656,
+        936,
+        785
+      ]
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        712,
+        668,
+        934,
+        787
+      ]
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        25,
+        14,
+        139,
+        38
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        51,
+        952,
+        291
+      ]
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        86,
+        318,
+        253,
+        341
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        85,
+        347,
+        624,
+        380
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        147,
+        380,
+        353,
+        437
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        437,
+        406,
+        648,
+        481
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        358,
+        418,
+        430,
+        495
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        139,
+        457,
+        347,
+        536
+      ]
+    },
+    {
+      "page": 4,
+      "label": "vision_footnote",
+      "task_type": "text",
+      "bbox_norm": [
+        482,
+        483,
+        621,
+        496
+      ]
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        99,
+        552,
+        358,
+        575
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        448,
+        560,
+        636,
+        617
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        668,
+        579,
+        924,
+        649
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        583,
+        361,
+        599
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        435,
+        587,
+        457,
+        599
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        604,
+        434,
+        620
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        79,
+        625,
+        546,
+        641
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        79,
+        645,
+        541,
+        661
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        665,
+        610,
+        696
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        701,
+        454,
+        717
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        437,
+        705,
+        634,
+        763
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        722,
+        248,
+        737
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        742,
+        431,
+        759
+      ]
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        88,
+        768,
+        498,
+        790
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        87,
+        795,
+        577,
+        812
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        88,
+        818,
+        553,
+        865
+      ]
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        101,
+        868,
+        590,
+        894
+      ]
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        148,
+        893,
+        487,
+        977
+      ]
+    },
+    {
+      "page": 5,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        85,
+        11,
+        654,
+        43
+      ]
+    },
+    {
+      "page": 5,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        85,
+        54,
+        575,
+        77
+      ]
+    },
+    {
+      "page": 5,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        96,
+        85,
+        753,
+        289
+      ]
+    },
+    {
+      "page": 5,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        29,
+        331,
+        961,
+        707
+      ]
+    },
+    {
+      "page": 5,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        69,
+        767,
+        342,
+        839
+      ]
+    },
+    {
+      "page": 5,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        467,
+        767,
+        787,
+        857
+      ]
+    },
+    {
+      "page": 5,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        76,
+        892,
+        847,
+        995
+      ]
+    },
+    {
+      "page": 6,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        50,
+        8,
+        899,
+        137
+      ]
+    },
+    {
+      "page": 6,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        53,
+        157,
+        485,
+        199
+      ]
+    },
+    {
+      "page": 6,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        54,
+        216,
+        871,
+        275
+      ]
+    },
+    {
+      "page": 6,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        171,
+        293,
+        895,
+        514
+      ]
+    },
+    {
+      "page": 6,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        40,
+        526,
+        614,
+        581
+      ]
+    },
+    {
+      "page": 6,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        211,
+        583,
+        544,
+        675
+      ]
+    },
+    {
+      "page": 6,
+      "label": "figure_title",
+      "task_type": "text",
+      "bbox_norm": [
+        368,
+        676,
+        392,
+        691
+      ]
+    },
+    {
+      "page": 6,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        212,
+        707,
+        544,
+        801
+      ]
+    },
+    {
+      "page": 6,
+      "label": "figure_title",
+      "task_type": "text",
+      "bbox_norm": [
+        367,
+        803,
+        392,
+        818
+      ]
+    }
+  ]
+}

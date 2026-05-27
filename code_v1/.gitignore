@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+document_output.md
+output.md
+scratch_images/

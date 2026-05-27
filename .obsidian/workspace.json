@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "f50180d2d1480c10",
+    "type": "split",
+    "children": [
+      {
+        "id": "7418b43dcbfa8adf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90f79201a162be23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "output/final.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "final"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "60929bf96beb998e",
+    "type": "split",
+    "children": [
+      {
+        "id": "408251c5c0d9189e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6dbefab8bb425d6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1fd981607edf4860",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "642715f88007d56b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0fd946e334aa1aac",
+    "type": "split",
+    "children": [
+      {
+        "id": "d559489415775796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e56b6f4ac44f1c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "human_output.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for human_output"
+            }
+          },
+          {
+            "id": "368ea7580e6f160c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "human_output.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from human_output"
+            }
+          },
+          {
+            "id": "82a2a499ca5c51ff",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "700efa5ac51b65f2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "77bc7b30d098cd16",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "human_output.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of human_output"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "90f79201a162be23",
+  "lastOpenFiles": [
+    "__pycache__/gpu_utils.cpython-313.pyc",
+    "gpu_utils.py",
+    "phases/phase3_zones.json",
+    "phases/phase3_complete.pdf",
+    "phases/phase2_zones.json",
+    "phases/phase2_ocrd.pdf",
+    "phases/phase1_zones.json",
+    "phases",
+    "run_all.py",
+    "phase4_docling.py",
+    "phase3_lm_overlay.py",
+    "output/llm_output.md",
+    "output/final.md",
+    "test_page.png",
+    "llm_output.md",
+    "output/output.md",
+    "output/verification.md",
+    "output_final/llm_output.md",
+    "output_final/output.md",
+    "output_final/verification.md",
+    "output_test2/llm_output.md",
+    "output_test2/output.md",
+    "output_test2/verification.md",
+    "output_test/llm_output.md",
+    "output_test/output.md",
+    "output_test/verification.md",
+    "pdf_idk.md",
+    "Manual_md_zoning.md",
+    "output.md",
+    "README.md",
+    "test_crop.png",
+    "Pasted image 20260524170957.png",
+    "debug_zones/page_7_zones.png",
+    "debug_zones/page_6_zones.png",
+    "debug_zones/page_5_zones.png",
+    "debug_zones/page_4_zones.png",
+    "debug_zones/page_3_zones.png",
+    "debug_zones/page_2_zones.png",
+    "debug_zones/page_1_zones.png",
+    "human_output.md",
+    "wrthrth.md",
+    "document_output.md",
+    "idk.md"
+  ]
+}
