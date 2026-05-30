@@ -200,31 +200,46 @@ def overlay_text_on_page(page, zone, pdf_dims, invisible=False):
     if zone_w <= 0 or zone_h <= 0:
         return
 
-    # Normalize line breaks: replace \r\n / \r with \n
     text = text.replace("\r\n", "\n").replace("\r", "\n")
+    lines = [l for l in text.split("\n") if l.strip()]
+    if not lines:
+        return
 
-    fontname = "helv" if all(ord(c) < 128 for c in text) else "china-s"
+    fitz_font = fitz.Font("helv")
+    asc = fitz_font.ascender
+    desc = fitz_font.descender
 
-    # insert_textbox handles word-wrapping, font sizing, and \n line breaks
-    rect = fitz.Rect(x1, y1, x2, y2)
+    # Find longest line for width fitting
+    longest = max(lines, key=lambda l: fitz_font.text_length(l, fontsize=1))
+    tl = fitz_font.text_length(longest, fontsize=1)
+    if tl <= 0:
+        return
+
+    fontsize = zone_w / tl
+    line_h = (asc - desc) * fontsize * 1.15
+    total_h = line_h * len(lines)
+
+    if total_h > zone_h:
+        scale = zone_h / total_h
+        fontsize *= scale
+        line_h = (asc - desc) * fontsize * 1.15
+
+    fontsize = max(4, min(72, fontsize))
+    line_h = (asc - desc) * fontsize * 1.15
+    total_h = line_h * len(lines)
+
+    # Center block vertically in zone
+    y_start = y2 - (zone_h - total_h) / 2 - fontsize * 0.15
+
     render_mode = 3 if invisible else 0
-
-    # Start with a reasonable font size and shrink if needed
-    fontsize = 7.0
-    for _ in range(8):
-        res = page.insert_textbox(
-            rect, text, fontsize=fontsize, fontname=fontname,
-            render_mode=render_mode, align=fitz.TEXT_ALIGN_LEFT,
-        )
-        # res < 0 means text overflowed the rect
-        if res >= 0:
-            break
-        fontsize *= 0.85
-    else:
-        # Last resort: force-fit with tiny font
-        page.insert_textbox(
-            rect, text, fontsize=4.0, fontname=fontname,
-            render_mode=render_mode, align=fitz.TEXT_ALIGN_LEFT,
+    for i, line in enumerate(lines):
+        y = y_start - i * line_h
+        page.insert_text(
+            (x1, y),
+            line,
+            fontsize=fontsize,
+            fontname="helv",
+            render_mode=render_mode,
         )
 
 
@@ -331,7 +346,7 @@ def main():
 
     print(f"  Base PDF: {base_pdf}")
     print(f"  Prompts: {list(prompts.keys())}")
-    print(f"  Text overlay: {'invisible' if args.invisible else 'visible'}")
+    print(f"  Text overlay: {'visible' if args.visible else 'invisible'}")
     t0 = time.time()
 
     doc = fitz.open(base_pdf)
@@ -350,6 +365,8 @@ def main():
     lm_tasks = []
     for i, z in enumerate(zones):
         if z["task_type"] == "skip":
+            if z.get("source") == "lm_studio" and z.get("content", "").strip():
+                continue
             needs_lm = False
             if z["label"] in ("image", "chart"):
                 needs_lm = True
@@ -382,6 +399,9 @@ def main():
         )
         print(f"  Local model loaded on {local_lm_model.device}")
 
+    cached_count = len([z for z in zones if z.get("source") == "lm_studio" and z.get("content", "").strip()])
+    if cached_count:
+        print(f"  {cached_count} zones with cached VLM content (skipping API)")
     if not lm_tasks:
         print(f"  No image/chart zones to process")
     else:
