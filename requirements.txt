@@ -1,0 +1,14 @@
+# llm-ocr pipeline dependencies
+# Install: pip install -r requirements.txt
+# For CUDA torch, install pytorch first: https://pytorch.org/get-started/locally/
+
+torch
+torchvision
+transformers
+accelerate
+Pillow
+PyMuPDF
+numpy
+glmocr
+pynvml
+opencv-python

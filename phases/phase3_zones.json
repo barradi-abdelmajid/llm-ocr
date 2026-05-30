@@ -1,0 +1,1818 @@
+{
+  "pdf_stem": "pdf_idk",
+  "pdf_path": "D:\\documents\\github\\llm-ocr\\pdf_idk.pdf",
+  "num_pages": 7,
+  "pdf_dims": [
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    },
+    {
+      "width": 612.0,
+      "height": 803.25
+    }
+  ],
+  "zones": [
+    {
+      "page": 0,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        45,
+        30,
+        120,
+        64
+      ],
+      "content": "Rappel",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        554,
+        69,
+        637,
+        109
+      ],
+      "content": "- **Batterie (source de tension)** : Non visible de valeur exacte.\n  *(Seule la polarité est indiquée par les traits + et - implicites dans le schéma simplifié)*\n\n- **Résistance** : Non explicitement marquée avec une valeur numérique.\n  *(Si c'est un symbole standard pour un composant passif non spécifié, on ne peut pas identifier sa valeur exacte.)*\n\n- **Courant (i)** : Flux d'électrons circulant dans le circuit (direction indiquée par la flèche).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        401,
+        70,
+        490,
+        112
+      ],
+      "content": "Dans l'image donnée :\n\n- **Capacité (condensateur)** : Aucune valeur visible explicitement modifiée (si la valeur initiale était différente, elle n'est pas indiquée ici).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        192,
+        84,
+        280,
+        110
+      ],
+      "content": "$$ \\times 1 0 ^ {- 1 9} C $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        74,
+        123,
+        165,
+        168
+      ],
+      "content": "$$ v = \\frac {d w}{d q} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        241,
+        123,
+        325,
+        163
+      ],
+      "content": "$ i=\\frac{d a}{d t} $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        402,
+        126,
+        482,
+        150
+      ],
+      "content": "$$ p = + i v $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        572,
+        127,
+        617,
+        146
+      ],
+      "content": "$$ - i V $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        524,
+        130,
+        548,
+        145
+      ],
+      "content": "an",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        650,
+        192,
+        790,
+        323
+      ],
+      "content": "- **\\(i_s\\)** : Augmenté (flèche vers le haut indiquant une augmentation par rapport à la ligne de référence initiale).\n\n*(Aucune autre valeur explicite n'est visible sur l'image pour les autres composants.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        405,
+        206,
+        487,
+        305
+      ],
+      "content": "Aucun composant visible dans l'image ne montre de nouvelle valeur modifiée (les éléments sont simplement étiquetés \"ci\" et \"courant/canrant\").",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        542,
+        206,
+        632,
+        308
+      ],
+      "content": "- **Courant** : Non visible de manière quantitative dans l'image.\n- **Tension** : Non spécifiée ou indiquée avec une valeur précise dans cette illustration.\n\n*(Si des modifications spécifiques comme des longueurs, angles ou autres paramètres étaient indiqués sur le schéma, ils ne sont pas visibles ici.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        184,
+        207,
+        361,
+        307
+      ],
+      "content": "- **bv** (tension ctrl) → **tension**",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        65,
+        212,
+        146,
+        260
+      ],
+      "content": "Dans l'image fournie, aucun changement de valeur n'est visible pour les composants existants (batterie V₅ et circuit fermé).\n\nSi un composant était modifié dans une version ultérieure ou spécifique du schéma (non représentée ici), précisez-le explicitement avec ses nouvelles valeurs.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        84,
+        341.0,
+        182,
+        360.0
+      ],
+      "content": "i > R",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        84,
+        360.0,
+        182,
+        379.0
+      ],
+      "content": "-",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        241,
+        349,
+        291,
+        373
+      ],
+      "content": "$ V=R i $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        613,
+        349,
+        682,
+        375
+      ],
+      "content": "G = 1 / R",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        379,
+        350,
+        504,
+        391
+      ],
+      "content": "$$ P = R i ^ {2} = \\frac {V ^ {2}}{R} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        57,
+        405,
+        141,
+        464
+      ],
+      "content": "- **Flèche vers le bas (centre gauche)** : Modifiée pour indiquer une direction descendante plus marquée.\n- **Flèche horizontale (droite, en bleu)** : Changement de couleur vers un bleu clair ou pastel.\n\n*(Les autres éléments comme les formes géométriques et les couleurs des zones ne semblent pas modifiés dans cette image.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        58,
+        405,
+        257,
+        465
+      ],
+      "content": "- **iₙ (composante négative verticale)** : \\(-s\\) → \\(-2\\)\n- **iₒt (composante horizontale positive)** : \\(+2\\)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        601,
+        406,
+        728,
+        448
+      ],
+      "content": "$$ - \\boxed {2} - \\boxed {7} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        300,
+        413,
+        434,
+        446
+      ],
+      "content": "Dans l'image fournie :\n\n- Aucun changement visible des résistances **R₁** et **R₂** n'est indiqué explicitement dans le schéma (pas de valeur modifiée ou annotation supplémentaire).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        772,
+        413,
+        950,
+        449
+      ],
+      "content": "$$ R = \\left(\\% _ {\\mathrm {R} _ {1}} + \\% _ {\\mathrm {R} _ {2}}\\right) ^ {- 7} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        467,
+        421,
+        570,
+        445
+      ],
+      "content": "$$ R _ {1} = R _ {1} + R _ {2} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        54,
+        521,
+        207,
+        586
+      ],
+      "content": "Dans cette image, aucun changement de valeur n'est visible pour les composants **R₁** et **R₂ (Ra)**.\n\nSi des modifications spécifiques étaient indiquées dans un contexte supplémentaire (par exemple, une légende ou une description), elles ne sont pas représentées ici.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        276,
+        539,
+        431,
+        586
+      ],
+      "content": "$$ V _ {2} = V _ {3}. \\frac {R _ {2}}{R _ {1} + R _ {2}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        44,
+        608,
+        271,
+        692
+      ],
+      "content": "Dans l'image donnée :\n\n- Aucune modification visible des résistances \\( R_1 \\) et \\( R_2 \\).\n- Aucun changement apparent sur la source de tension \\( V_s \\).\n\nSi vous avez une liste spécifique de modifications ou valeurs à vérifier, précisez-les pour que je puisse répondre plus précisément.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        332,
+        650,
+        520,
+        692
+      ],
+      "content": "$$ i _ {2} = i _ {3} \\cdot \\frac {R _ {1}}{R _ {1} + R _ {0}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        504,
+        715,
+        727,
+        751
+      ],
+      "content": "$$ R _ {a b} = \\frac {R _ {c} \\left(R _ {a} + R _ {b}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {1} + R _ {2} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        222,
+        719,
+        294,
+        745
+      ],
+      "content": "$$ \\Delta Y $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        56,
+        721,
+        160,
+        749
+      ],
+      "content": "Trans phorm",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        504,
+        755,
+        728,
+        793
+      ],
+      "content": "$$ R _ {a c} = \\frac {R _ {b} \\left(R _ {a} + R _ {c}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {1} + R _ {3} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        45,
+        772,
+        220,
+        873
+      ],
+      "content": "Dans cette image, il n'y a pas de valeurs numériques explicitement indiquées pour les résistances ou le condensateur.\n\nSi on suppose que les composants sont simplement relabelisés (sans modification des valeurs intrinsèques) :\n- **Rc** reste inchangé.\n- **Ra** et **Rb** restent inchangés sans nouvelle valeur visible.\n\nAucun changement de valeur explicite n'est visible sur cette figure.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        247,
+        778,
+        402,
+        890
+      ],
+      "content": "Dans l'image donnée :\n\n- Aucun changement de valeur explicite pour **R₁**, **Ra** ou **R₂** (non visible dans la notation initiale).\n- Aucune modification des composants n'est indiquée clairement sur cette figure.\n\nSi les valeurs étaient modifiées, elles ne sont pas visibles ici.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        504,
+        803,
+        727,
+        840
+      ],
+      "content": "$$ R _ {b c} = \\frac {R _ {a} \\left(R _ {b} + R _ {c}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {2} + R _ {3} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        484,
+        846,
+        548,
+        869
+      ],
+      "content": "$$ \\Delta \\rightarrow Y $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        700,
+        847,
+        787,
+        870
+      ],
+      "content": "$$ Y \\rightarrow \\Delta $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        434,
+        871,
+        566,
+        906
+      ],
+      "content": "$$ R _ {1} = \\frac {R _ {b} R _ {c}}{R _ {a} + R _ {b} + R _ {c}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        627,
+        874,
+        808,
+        908
+      ],
+      "content": "$$ R _ {a} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {1}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        433,
+        908,
+        565,
+        942
+      ],
+      "content": "$$ R _ {2} = \\frac {R _ {a} R _ {c}}{R _ {a} + R _ {b} + R _ {c}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        628,
+        913,
+        808,
+        948
+      ],
+      "content": "$$ R _ {b} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {2}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        432,
+        946,
+        565,
+        982
+      ],
+      "content": "$$ R _ {3} = \\frac {R _ {a} R _ {b}}{R _ {a} + R _ {b} + R _ {c}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        628,
+        953,
+        807,
+        987
+      ],
+      "content": "$$ R _ {c} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {3}} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        49,
+        15,
+        164,
+        39
+      ],
+      "content": "Vocabulaire :",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        95,
+        52.0,
+        694,
+        82.5
+      ],
+      "content": "Noend : paint oci 2+ compositos se rejaignent",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        95,
+        82.5,
+        694,
+        113.0
+      ],
+      "content": "Nound essential : 3+ compo",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        96,
+        126,
+        658,
+        148
+      ],
+      "content": "parcomrs : chemin avec ng campg en double",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        98,
+        158,
+        523,
+        182
+      ],
+      "content": "Bronche: parcoms reliant a noends",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        98,
+        194.0,
+        977,
+        224.0
+      ],
+      "content": "Branche ess : parcours relié à nouns essentiels sans passer par autre ess",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        98,
+        224.0,
+        977,
+        254.0
+      ],
+      "content": "Bancle : parcours fermé",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        106,
+        264,
+        514,
+        288
+      ],
+      "content": "Maille : bandle sans autres bandle",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        474,
+        344,
+        827,
+        373
+      ],
+      "content": "pour trouver r+th, mod circuit avec:",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        70,
+        346,
+        127,
+        375
+      ],
+      "content": "Thev",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        84,
+        376,
+        342,
+        466
+      ],
+      "content": "- **Source de tension** : \\( V_{tn} \\) (valeur non spécifiée explicitement)\n- **Résistance** : \\( R_{Th} \\) (valeur non précisée sur l'image)\n- **Interrupteur** : Positionné en position fermée (i = 0, courant circule)\n\n*(Pas de valeurs numériques précises pour les composants autres que la notation symbolique.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        588,
+        397,
+        683,
+        463
+      ],
+      "content": "$ \\uparrow $ $ \\equiv $ $ \\downarrow $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        387,
+        398,
+        498,
+        460
+      ],
+      "content": "Dans l'image fournie :\n\n- **Pas de modification visible des composants** (pas de changement de symbole ou de valeur apparente sur le schéma simplifié).\n\nSi la question concernait une simplification équivalente du circuit, il s'agit généralement d'une représentation équivalente en **source transformée** (théorème de Norton ou Thévenin) pour un circuit avec une source et des résistances en parallèle/série.\n\nPour ce cas précis, si on considère que le schéma original était une source + résistance en parallèle avec un autre élément, la simplification équivalente montre :\n- Une seule **source équivalente** (valeur non spécifiée dans l'image).\n- Une **résistance équivalente** (calculée selon les valeurs originales des résistances en parallèle).\n\n*Si vous précisez les valeurs initiales ou le contexte exact du schéma original, je peux calculer explicitement les nouvelles valeurs.*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 1,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        50,
+        492,
+        589,
+        517
+      ],
+      "content": "Calculer l'équivalent de Thévenin - Exemple (1)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        130,
+        518,
+        279,
+        533
+      ],
+      "content": "Tension en circuit ouvert",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        198,
+        536,
+        451,
+        603
+      ],
+      "content": "- Résistance en série avec le courant de 15 A (8 Ω) → **non visible de modification**\n- Branchement des points a et b : pas de changement de valeur sur les résistances existantes.\n\nSi une autre modification visuelle était implicite dans un contexte non montré, précisez-le explicitement. Aucune nouvelle valeur n'est clairement indiquée pour les composants dans cette image.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        248,
+        640,
+        408,
+        652
+      ],
+      "content": "$ 2 i+1 2 i+1 0 i+8 ( i-1 5 )=0 $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        264,
+        662,
+        389,
+        675
+      ],
+      "content": "$$ v _ {o c} = 1 2 i = 4 5 V = V _ {T h} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        243,
+        733,
+        495,
+        839
+      ],
+      "content": "- Résistance (R) dans la branche supérieure gauche : **8 Ω**\n- Source de tension (ou courant ?) en haut central : **i** (courant)\n- Branche centrale inférieure avec étiquette 1/2 : **Composant non spécifié clairement, probablement une source ou un élément symbolique (peut-être une division de courant)**\n- Résistance dans la branche inférieure droite : **10 Ω**\n- Composant en haut droit (zone orange) : **3/12** (valeur indéterminée, peut-être une division de tension/courant ou un symbole de mesure)\n- Branche supérieure droite avec étiquette \"a\" et \"0\" : **Connexion directe (ligne conductrice)**",
+      "source": "lm_studio"
+    },
+    {
+      "page": 1,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        550,
+        737,
+        631,
+        762
+      ],
+      "content": "$ R=2 0 S 2 $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        547,
+        770,
+        804,
+        816
+      ],
+      "content": "$$ \\left(\\frac {1}{1 2} + \\frac {1}{2 0}\\right) ^ {- 1} = 7. 5 = R t n $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        5,
+        774,
+        224,
+        1000
+      ],
+      "content": "D'après l'image fournie (qui semble représenter une courbe de type **fonction exponentielle ou polynomiale** sans contexte supplémentaire), voici les éléments potentiellement pertinents à mentionner :\n\n- **Aucune valeur numérique visible explicitement** pour des composants modifiés (pas d'équation, pas de paramètres comme *a*, *b*, *k* ou coefficients précis).\n\nSi cette courbe représente une transformation mathématique standard (par exemple, translation verticale/horizontale, réflexion, etc.), voici ce qui pourrait être modifié selon un contexte hypothétique :\n\n- **Déplacement vertical** : Si la courbe est translatée vers le haut/dessus d’un axe de référence, valeur modifiée = **+k** (ex. *y = f(x) + k*).\n- **Transformation horizontale** : Si une translation horizontale est appliquée, valeur modifiée = **-h** (ex. *y = f(x - h)*).\n\nPour des détails précis, il faudrait connaître :\n1. L’équation initiale de la courbe.\n2. La nature exacte de la transformation appliquée.\n\n*(Aucune information visible dans l'image ne permet d'identifier les composants modifiés sans contexte supplémentaire.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 1,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        297,
+        855,
+        477,
+        939
+      ],
+      "content": "- **Inductance (L)** : 7.52 mH (si le dessin indique une modification de la valeur du bobinage)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        0,
+        1,
+        325,
+        51
+      ],
+      "content": "- **R1** : Non visible clairement sur cette image.\n\n*(Aucun autre composant identifiable avec précision dans cette vue limitée.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        0,
+        4,
+        768,
+        324
+      ],
+      "content": "- Source de courant : **15 A** (inchangé)\n- Résistance combinée dans le circuit parallèle :\n  - Nouvelle valeur équivalente calculée comme \\( \\frac{9}{24+8} \\) (non explicitement modifiée, mais utilisée pour obtenir la tension aux bornes du circuit équivalent).\n\n- Tension source équivalente : **45 V** (nouvelle valeur)\n- Inductance dans le circuit équivalent : **7.53 mH** (nouvelle valeur calculée).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 2,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        58,
+        331,
+        148,
+        359
+      ],
+      "content": "Northon",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        52,
+        379,
+        653,
+        495
+      ],
+      "content": "- **Source de tension (V_th)** : Composante non visible explicitement avec valeur numérique.\n- **Résistance équivalente (R_th)** : Représentée par la résistance en série dans les deux schémas.\n\nDans l'équivalence :\n- **Courant source (I_in)** : Source de courant idéale (non spécifiée avec une valeur numérique).\n- **R_th** : Même composant que précédemment, équivalent à la résistance interne du circuit initial.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 2,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        45,
+        510,
+        324,
+        536
+      ],
+      "content": "Same exo with Northon",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 2,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        45,
+        557,
+        897,
+        728
+      ],
+      "content": "1. Source de courant (dans la partie gauche) : 15 A\n2. Résistance en série avec la source de courant (haut à gauche) : 2 Ω\n3. Résistance verticale (entre les points a et b) : 8 Ω\n4. Résistance horizontale supérieure (entre le nœud supérieur et point marqué +) : 10 Ω\n5. Source de tension thêta (dans la simplification du circuit en haut central) :\n   - Thévenin équivalent : source de tension \\( V_{th} = 180V \\)\n6. Résistance combinée dans le circuit Thevenin : 8Ω en série avec une autre partie équivalente (non explicitement détaillée mais vue comme un bloc)\n\n7. Dans la simplification finale :\n   - Source de tension : 45 V\n   - Résistance en parallèle : \\( 7,15 \\Omega \\)\n   - Courant source : 3,75 A\n\n8. Branche avec résistance (en bas à droite) : 12 Ω (dans le circuit Thevenin simplifié).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        50,
+        11,
+        459,
+        34
+      ],
+      "content": "Principe de superposition - Exemple (1)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 3,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        50,
+        38,
+        205,
+        56
+      ],
+      "content": "- Calculer le courant $ \\mathrm{i}_{3} $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        91,
+        67,
+        651,
+        153
+      ],
+      "content": "- Source de tension : 120 V\n- Résistance en série avec la source (gauche) : 6 Ω\n- Résistance en parallèle avec les autres éléments (derrière la première branche) : 2 Ω\n- Résistance verticale inférieure gauche : 3 Ω\n- Courant constant source vers le bas : 12 A\n- Branchement de courant (i4) traversant une résistance verticale : 4 Ω",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        61,
+        185,
+        301,
+        449
+      ],
+      "content": "Voici la description des composants du premier schéma (du haut) :\n\n- Résistances en série : 6 Ω et 2 Ω\n- Branche gauche :\n  - Composant vertical (3) : Inductance (L) ou bobine non spécifiée (valeur indiquée comme \"3\")\n- Branche droite :\n  - Composant vertical (4) : Inductance (L) ou bobine non spécifiée (valeur indiquée comme \"4\")\n\nDeuxième schéma (en bas à gauche avec deux composants en parallèle) :\n- Deux inductances (ou bobines) de valeur 4 chacune.\n\nTroisième schéma (bas au centre) :\n- Une seule inductance (bobine) de valeur 2 Ω.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        60,
+        186,
+        298,
+        269
+      ],
+      "content": "Les composants modifiés dans cette image ne montrent pas de valeurs clairement révisées.\n\nSi on considère les étiquettes initiales comme :\n- **6** (spirale en haut à gauche)\n- **2** (résistance horizontale au-dessus du milieu)\n- **3** et **4** (composants verticaux entre les lignes)\n\nLes composants restent inchangés avec leurs valeurs d'origine visibles. Aucune nouvelle valeur n'est indiquée sur cette image.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        351,
+        255,
+        805,
+        435
+      ],
+      "content": "Dans la deuxième schéma (bas) :\n\n- **Composant 2** : Résistance modifiée en **2 Ω** (visible comme un changement par rapport à l'image initiale).\n- **Branche contenant le courant de 12 A** : Le sens du courant est inversé et reste une source idéale de courant (**12 A**).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        435,
+        456,
+        717,
+        534
+      ],
+      "content": "- Composant en série (4Ω) → **4,5 Ω**",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        443,
+        560,
+        758,
+        641
+      ],
+      "content": "- Composant marqué **3** : Modifié en une source de tension de **-48V**.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        459,
+        655,
+        663,
+        778
+      ],
+      "content": "- Capacité entre A et B : **452 pF** (modifiée de 48 pF)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        453,
+        656,
+        936,
+        785
+      ],
+      "content": "Les composants visibles dans l'image ne montrent pas de modifications sur les valeurs des éléments après analyse.\n\nSi on considère les équations notées, la seule valeur explicitement indiquée pour un changement est :\n- **48 Ω** (résistance) reste inchangé dans le schéma initial et n'est pas modifié dans les relations dérivées.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 3,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        712,
+        668,
+        934,
+        787
+      ],
+      "content": "Voici les modifications visibles dans l'image :\n\n- \\( \\sin(\\alpha) - A_1 = \\beta \\)\n  → **\\( \\sin(\\alpha) = \\beta + A_1 \\)**\n\n- \\( \\sin(\\alpha) = \\delta \\)\n\n- \\( \\alpha_i = (a \\, i) \\)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        25,
+        14,
+        139,
+        38
+      ],
+      "content": "Vocabulaire :",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        51.0,
+        952,
+        85.28571428571428
+      ],
+      "content": "Noend : paint oui 2+ composants se rejaignent",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        85.28571428571428,
+        952,
+        119.57142857142857
+      ],
+      "content": "Noand essentiel : 3+ compo",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L3",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        119.57142857142857,
+        952,
+        153.85714285714286
+      ],
+      "content": "parcomrs : chemin avec no campo en double",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L4",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        153.85714285714286,
+        952,
+        188.14285714285714
+      ],
+      "content": "Bronche : parcomrs reliant à noends",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L5",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        188.14285714285714,
+        952,
+        222.42857142857142
+      ],
+      "content": "Bronche ess : parcomrs relié à noends essentiels sans passer par autre ess",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L6",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        222.42857142857142,
+        952,
+        256.7142857142857
+      ],
+      "content": "Banche : parcomrs fermé",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L7",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        256.7142857142857,
+        952,
+        291.0
+      ],
+      "content": "Maille : banche sans autres banche",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        86,
+        318,
+        253,
+        341
+      ],
+      "content": "Terminologie",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        85,
+        347,
+        624,
+        380
+      ],
+      "content": "- Circuit planaire: Circuit qui peut se dessiner sur un plan sans que des branches se croisent.",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        147,
+        380,
+        353,
+        437
+      ],
+      "content": "- **R₁** : Résistance en série avec la source\n- **R₂** et **R₃** : Résistances en parallèle entre les deux points de jonction supérieurs (branche haute)\n- **R₄** : Résistance en parallèle avec R₈ dans le bas droit du circuit\n- **R₅** : Résistance en série avec la source, branchée vers le bas gauche\n- **R₆** : Résistance verticale reliant les deux points de jonction inférieurs (entre R₅ et le nœud central)\n- **R₇** et **R₈** : Résistances en parallèle entre les deux branches du milieu inférieur (X-forme)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        437,
+        406,
+        648,
+        481
+      ],
+      "content": "D'après l'image fournie et en supposant que certaines résistances ont été modifiées (sans données spécifiques sur la nouvelle valeur exacte visible dans cette image) :\n\n- Aucune modification visible des résistances **R₁, R₂, R₃** ou **R₄** n'est indiquée.\n\nSi les valeurs sont marquées différemment dans une version actualisée de l'image (par exemple avec des chiffres en rouge ou autres annotations), voici ce qui pourrait être modifié selon un contexte hypothétique :\n- **R₆ → R₆'**, **R₇ → R₇'** (si valeurs changées explicitement).\n\n*Note :* Aucune valeur modifiée claire n'est visible dans cette image standard. Vérifiez les annotations ou documents associés pour des détails précis.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        358,
+        418,
+        430,
+        495
+      ],
+      "content": "Je ne peux pas analyser des images pour identifier des composants ou leurs modifications sans informations supplémentaires.\n\nSi vous avez une liste de composants et leurs anciennes valeurs, merci de préciser celles-ci pour que je puisse comparer.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        139,
+        457,
+        347,
+        536
+      ],
+      "content": "Dans cette configuration, voici les modifications visibles des résistances :\n\n- **R₆** : Modifié en **R₆'** (valeur non spécifiée dans l'image)\n- **R₇** : Supprimé ou remplacé par une connexion directe entre ses points (pas de valeur indiquée)\n\n*(Les autres composants comme R₁, R₂, R₃, R₄ et R₅ restent inchangés.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "vision_footnote",
+      "task_type": "text",
+      "bbox_norm": [
+        482,
+        483,
+        621,
+        496
+      ],
+      "content": "Circuit non-planaire",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        99,
+        552,
+        358,
+        575
+      ],
+      "content": "Méthode des noeuds",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        448,
+        560,
+        636,
+        617
+      ],
+      "content": "Aucun changement visible sur la carte du circuit dans l'image fournie.\n\n*(Si des modifications étaient apportées après cette capture, elles ne sont pas représentées ici.)*",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        668,
+        579.0,
+        924,
+        614.0
+      ],
+      "content": "Méthode spécifié intra",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        668,
+        614.0,
+        924,
+        649.0
+      ],
+      "content": "maybe final too",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        583,
+        361,
+        599
+      ],
+      "content": "Basée sur le LKC aux nœuds essentiels",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        435,
+        587,
+        457,
+        599
+      ],
+      "content": "10 V",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        604,
+        434,
+        620
+      ],
+      "content": "- Circuits planaires ou pas: Redessiner clairement",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        79,
+        625,
+        546,
+        641
+      ],
+      "content": "- Sélectionner un des noeuds essentiels pour en faire la référence",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        79,
+        645,
+        541,
+        661
+      ],
+      "content": "- Nommer (variables) les tensions des noeuds essentiels restants",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        665.0,
+        610,
+        680.5
+      ],
+      "content": "- Écrire les équations LKC des nœuds essentiels restants ($n_e$-1 équations LKC)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        680.5,
+        610,
+        696.0
+      ],
+      "content": "– Courants inconnus exprimés en fonction des tensions et résistances (éventuellement impédances)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        701,
+        454,
+        717
+      ],
+      "content": "- Solutionner pour les tensions de nœuds essentiels",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        437,
+        705,
+        634,
+        763
+      ],
+      "content": "- Résistance en série avec la source de tension : **2 Ω** (remplacée par deux résistances de 1 Ω en parallèle)\n- Source de courant : **2 A** (valeur inchangée mais positionnée différemment dans le circuit)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        722,
+        248,
+        737
+      ],
+      "content": "- Vérifier votre solution",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        742,
+        431,
+        759
+      ],
+      "content": "- Déduire d'autres quantités (courants) au besoin",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        88,
+        768,
+        498,
+        790
+      ],
+      "content": "Cas spécial: Sources dépendantes",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        87,
+        795,
+        577,
+        812
+      ],
+      "content": "- La même méthode s'applique s'il y a des sources dépendantes",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        88,
+        818,
+        553,
+        865
+      ],
+      "content": "- Il faut une équation de substitution pour chaque source dépendante et qui définit la variable dont depend la source dépendante en termes d'autres variables existantes",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        101,
+        868,
+        590,
+        894
+      ],
+      "content": "- Cela permet de relier les deux quantités entre elles (donc une variable de source inconnue de moins)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        148,
+        893,
+        487,
+        977
+      ],
+      "content": "- Source de tension : 20 V\n- Résistances en série horizontales :\n  - 2 Ω (gauche)\n  - 5 Ω (milieu horizontal)\n  - 2 Ω (droite)\n\n- Résistance verticale du milieu gauche : 20 Ω\n\n- Résistance verticale du milieu droit : 10 Ω\n\n- Diamant (source de courant dépendante) : \\(8i_\\phi\\)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 5,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        85,
+        11,
+        654,
+        43
+      ],
+      "content": "Méthode des noeuds - Exemple 3 (1)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 5,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        85,
+        54,
+        575,
+        77
+      ],
+      "content": "- Trouvez la puissance associée à chaque source.",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 5,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        96,
+        85,
+        753,
+        289
+      ],
+      "content": "- Source de tension : 50 V\n- Résistance (6 Ω) en série avec la source de tension\n- Source indépendante de courant : 5 A (direction indiquée)\n- Thévenine/Source dépendante (3i₁) en parallèle avec les autres éléments\n- Résistances :\n  - 2 Ω entre le nœud de v₂ et le point de jonction du circuit supérieur\n  - 8 Ω reliant la source de tension au nœud de v₁\n  - 4 Ω reliant le courant indépendant à v₂\n  - Courant conventionnel (i₁) dans les branches avec les résistances 6Ω et 8Ω.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 5,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        29,
+        331,
+        961,
+        707
+      ],
+      "content": "Voici la description des composants du circuit :\n\n- Source de tension : **50 V**\n- Résistance (6 Ω) en série avec la source\n- Point nodal supérieur gauche (avec courant \\(i_1\\))\n- Courant conventionnel \\(3 i_1\\)\n- Source idéale de courant (diamant) avec intensité **3i₁** (direction vers la gauche)\n- Résistance : **2 Ω**\n- Courant conventionnel \\(i_2\\) dans cette branche\n- Point nodal supérieur droit (avec tension \\(V_2\\) et courant \\(i_4\\))\n- Source de courant fixe : **5 A** (vers le haut)\n- Résistance : **4 Ω**\n- Courant conventionnel \\(i_4\\)\n- Résistance : **8 Ω** en parallèle avec la branche contenant les courants \\(i_3\\) et \\(i_8\\) (non précisé sur l'image mais visible dans le schéma)\n- Tension aux bornes de la source \\(V_1\\)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 5,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        69,
+        767.0,
+        342,
+        803.0
+      ],
+      "content": "$ V_{1} $ $ 4 i_{1}+i_{2}=i_{8} $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 5,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        69,
+        803.0,
+        342,
+        839.0
+      ],
+      "content": "$ V_{2} $ $ 5=3 i_{1}+i_{2}+i_{4} $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 5,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        467,
+        767,
+        787,
+        857
+      ],
+      "content": "$$ \\begin{array}{l} i _ {1} = \\frac {5 0 - V _ {1}}{6} i _ {2} = \\frac {V _ {2} - V _ {1}}{2} \\\\ i _ {8} = V _ {1} / 8 i _ {4} = V _ {2} / 4 \\\\ \\end{array} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 5,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        76,
+        892,
+        847,
+        995
+      ],
+      "content": "$$ \\left. \\begin{array}{l l} V _ {1}: \\frac {4}{6} (5 Q - V _ {1}) + \\frac {V _ {2} - V _ {1}}{2} = \\frac {V _ {1}}{8} \\\\ V _ {2}: 5 = \\frac {3}{6} (5 Q - V _ {1}) + \\frac {V _ {2} - V _ {1}}{2} + \\frac {V _ {2}}{4} \\end{array} \\right\\} \\rightarrow T i \\mathrm {s o l v e} \\Rightarrow D V _ {1} = 3 Q V V _ {2} = 1 6 V $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "display_formula",
+      "task_type": "formula",
+      "bbox_norm": [
+        50,
+        8,
+        899,
+        137
+      ],
+      "content": "$$ \\begin{array}{l} i _ {1} = \\frac {5 0 - 3 2}{6} = 3 A i _ {2} = \\frac {3 2 - 1 6}{2} = 8 A i _ {4} = 8 A i _ {8} = 4 A \\\\ p = V i \\\\ \\end{array} $$",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "paragraph_title",
+      "task_type": "text",
+      "bbox_norm": [
+        53,
+        157,
+        485,
+        199
+      ],
+      "content": "Simplifier un circuit",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "text_L1",
+      "task_type": "text",
+      "bbox_norm": [
+        54,
+        216.0,
+        871,
+        245.5
+      ],
+      "content": "- Est-ce que la source de 6 volts absorbe ou délivre de la puissance?",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        54,
+        245.5,
+        871,
+        275.0
+      ],
+      "content": "$i = i$ sans blum + i sans vert",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        171,
+        293,
+        895,
+        514
+      ],
+      "content": "Voici la description des composants du circuit :\n\n- Source de tension : 6 V (en haut à gauche)\n- Résistance : 4 Ω (au-dessus du premier nœud intermédiaire)\n- Résistance : 30 Ω (en bas vers le milieu gauche)\n- Résistance combinée en parallèle avec les branches inférieures : 10 Ω (entre les deux nœuds inférieurs)\n- Source de tension : 40 V (à droite)\n- Résistance : 6 Ω (au-dessus du deuxième nœud intermédiaire)\n- Résistance : 20 Ω (en bas vers le milieu droit)\n- Résistance : 5 Ω (vers la fin à droite)",
+      "source": "lm_studio"
+    },
+    {
+      "page": 6,
+      "label": "text",
+      "task_type": "text",
+      "bbox_norm": [
+        40,
+        526,
+        614,
+        581
+      ],
+      "content": "Cas spéciaux: on veut pouvoir faire les transformations suivantes",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        211,
+        583,
+        544,
+        675
+      ],
+      "content": "- Source de tension : \\( v_s \\) (valeur non spécifiée)\n- Résistance interne du générateur : \\( R_p \\) (non précisée avec valeur numérique)\n- Résistor : \\( R \\)\n\nLes lignes reliant les composants sont des connexions conductrices sans résistance apparente.",
+      "source": "lm_studio"
+    },
+    {
+      "page": 6,
+      "label": "figure_title",
+      "task_type": "text",
+      "bbox_norm": [
+        368,
+        676,
+        392,
+        691
+      ],
+      "content": "(a)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "image",
+      "task_type": "skip",
+      "bbox_norm": [
+        212,
+        707,
+        544,
+        801
+      ],
+      "content": "Dans l'image donnée :\n\n- **Pas de modification visible des composants** (la résistance \\( R_s \\) est supprimée et le courant source reste inchangé).",
+      "source": "lm_studio"
+    },
+    {
+      "page": 6,
+      "label": "figure_title",
+      "task_type": "text",
+      "bbox_norm": [
+        367,
+        803,
+        392,
+        818
+      ],
+      "content": "(b)",
+      "source": "glm_ocr"
+    }
+  ]
+}

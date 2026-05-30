@@ -4,10 +4,10 @@
 ## Valid section names: image, image_modification, chart
 
 # image
-Reply with one short phrase listing components and values only. Example: "R=5Ω, V=5V"
+Si c'est un circuit, nomme les composants avec leurs valeurs si visibles. Sinon, décris brièvement. Saute si c'est une ligne ou un élément sans intérêt. Pas d'introduction, juste le contenu.
 
 # image_modification
-Reply with one short phrase listing changed components and values only.
+Cite uniquement les composants modifiés avec leurs nouvelles valeurs si visibles. Pas d'introduction.
 
 # chart
-One short phrase summarizing the chart.
+Décris le graphique en une phrase : axes, tendance, valeurs clés si visibles. Pas d'introduction.

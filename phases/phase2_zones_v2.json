@@ -1,6 +1,6 @@
 {
   "pdf_stem": "pdf_idk",
-  "pdf_path": "D:\\documents\\codex\\llm\\pdf_idk.pdf",
+  "pdf_path": "D:\\documents\\github\\llm-ocr\\pdf_idk.pdf",
   "num_pages": 7,
   "pdf_dims": [
     {
@@ -82,7 +82,7 @@
         280,
         110
       ],
-      "content": "$$\\times 1 0 ^ {- 1 9} C$$",
+      "content": "$$ \\times 1 0 ^ {- 1 9} C $$",
       "source": "glm_ocr"
     },
     {
@@ -95,7 +95,7 @@
         165,
         168
       ],
-      "content": "$$v = \\frac {d w}{d q}$$",
+      "content": "$$ v = \\frac {d w}{d q} $$",
       "source": "glm_ocr"
     },
     {
@@ -121,7 +121,7 @@
         482,
         150
       ],
-      "content": "$$p = + i v$$",
+      "content": "$$ p = + i v $$",
       "source": "glm_ocr"
     },
     {
@@ -134,7 +134,7 @@
         617,
         146
       ],
-      "content": "$$- i V$$",
+      "content": "$$ - i V $$",
       "source": "glm_ocr"
     },
     {
@@ -217,15 +217,28 @@
     },
     {
       "page": 0,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         84,
-        341,
+        341.0,
         182,
-        379
+        360.0
       ],
-      "content": "i > R -",
+      "content": "i > R",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 0,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        84,
+        360.0,
+        182,
+        379.0
+      ],
+      "content": "-",
       "source": "glm_ocr"
     },
     {
@@ -264,7 +277,7 @@
         504,
         391
       ],
-      "content": "$$P = R i ^ {2} = \\frac {V ^ {2}}{R}$$",
+      "content": "$$ P = R i ^ {2} = \\frac {V ^ {2}}{R} $$",
       "source": "glm_ocr"
     },
     {
@@ -303,7 +316,7 @@
         728,
         448
       ],
-      "content": "$$- \\boxed {2} - \\boxed {7}$$",
+      "content": "$$ - \\boxed {2} - \\boxed {7} $$",
       "source": "glm_ocr"
     },
     {
@@ -329,7 +342,7 @@
         950,
         449
       ],
-      "content": "$$R = \\left(\\% _ {\\mathrm {R} _ {1}} + \\% _ {\\mathrm {R} _ {2}}\\right) ^ {- 7}$$",
+      "content": "$$ R = \\left(\\% _ {\\mathrm {R} _ {1}} + \\% _ {\\mathrm {R} _ {2}}\\right) ^ {- 7} $$",
       "source": "glm_ocr"
     },
     {
@@ -342,7 +355,7 @@
         570,
         445
       ],
-      "content": "$$R _ {1} = R _ {1} + R _ {2}$$",
+      "content": "$$ R _ {1} = R _ {1} + R _ {2} $$",
       "source": "glm_ocr"
     },
     {
@@ -368,7 +381,7 @@
         431,
         586
       ],
-      "content": "$$V _ {2} = V _ {3}. \\frac {R _ {2}}{R _ {1} + R _ {2}}$$",
+      "content": "$$ V _ {2} = V _ {3}. \\frac {R _ {2}}{R _ {1} + R _ {2}} $$",
       "source": "glm_ocr"
     },
     {
@@ -394,7 +407,7 @@
         520,
         692
       ],
-      "content": "$$i _ {2} = i _ {3} \\cdot \\frac {R _ {1}}{R _ {1} + R _ {0}}$$",
+      "content": "$$ i _ {2} = i _ {3} \\cdot \\frac {R _ {1}}{R _ {1} + R _ {0}} $$",
       "source": "glm_ocr"
     },
     {
@@ -407,7 +420,7 @@
         727,
         751
       ],
-      "content": "$$R _ {a b} = \\frac {R _ {c} \\left(R _ {a} + R _ {b}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {1} + R _ {2}$$",
+      "content": "$$ R _ {a b} = \\frac {R _ {c} \\left(R _ {a} + R _ {b}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {1} + R _ {2} $$",
       "source": "glm_ocr"
     },
     {
@@ -420,7 +433,7 @@
         294,
         745
       ],
-      "content": "$$\\Delta Y$$",
+      "content": "$$ \\Delta Y $$",
       "source": "glm_ocr"
     },
     {
@@ -446,7 +459,7 @@
         728,
         793
       ],
-      "content": "$$R _ {a c} = \\frac {R _ {b} \\left(R _ {a} + R _ {c}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {1} + R _ {3}$$",
+      "content": "$$ R _ {a c} = \\frac {R _ {b} \\left(R _ {a} + R _ {c}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {1} + R _ {3} $$",
       "source": "glm_ocr"
     },
     {
@@ -485,7 +498,7 @@
         727,
         840
       ],
-      "content": "$$R _ {b c} = \\frac {R _ {a} \\left(R _ {b} + R _ {c}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {2} + R _ {3}$$",
+      "content": "$$ R _ {b c} = \\frac {R _ {a} \\left(R _ {b} + R _ {c}\\right)}{R _ {a} + R _ {b} + R _ {c}} = R _ {2} + R _ {3} $$",
       "source": "glm_ocr"
     },
     {
@@ -498,7 +511,7 @@
         548,
         869
       ],
-      "content": "$$\\Delta \\rightarrow Y$$",
+      "content": "$$ \\Delta \\rightarrow Y $$",
       "source": "glm_ocr"
     },
     {
@@ -511,7 +524,7 @@
         787,
         870
       ],
-      "content": "$$Y \\rightarrow \\Delta$$",
+      "content": "$$ Y \\rightarrow \\Delta $$",
       "source": "glm_ocr"
     },
     {
@@ -524,7 +537,7 @@
         566,
         906
       ],
-      "content": "$$R _ {1} = \\frac {R _ {b} R _ {c}}{R _ {a} + R _ {b} + R _ {c}}$$",
+      "content": "$$ R _ {1} = \\frac {R _ {b} R _ {c}}{R _ {a} + R _ {b} + R _ {c}} $$",
       "source": "glm_ocr"
     },
     {
@@ -537,7 +550,7 @@
         808,
         908
       ],
-      "content": "$$R _ {a} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {1}}$$",
+      "content": "$$ R _ {a} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {1}} $$",
       "source": "glm_ocr"
     },
     {
@@ -550,7 +563,7 @@
         565,
         942
       ],
-      "content": "$$R _ {2} = \\frac {R _ {a} R _ {c}}{R _ {a} + R _ {b} + R _ {c}}$$",
+      "content": "$$ R _ {2} = \\frac {R _ {a} R _ {c}}{R _ {a} + R _ {b} + R _ {c}} $$",
       "source": "glm_ocr"
     },
     {
@@ -563,7 +576,7 @@
         808,
         948
       ],
-      "content": "$$R _ {b} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {2}}$$",
+      "content": "$$ R _ {b} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {2}} $$",
       "source": "glm_ocr"
     },
     {
@@ -576,7 +589,7 @@
         565,
         982
       ],
-      "content": "$$R _ {3} = \\frac {R _ {a} R _ {b}}{R _ {a} + R _ {b} + R _ {c}}$$",
+      "content": "$$ R _ {3} = \\frac {R _ {a} R _ {b}}{R _ {a} + R _ {b} + R _ {c}} $$",
       "source": "glm_ocr"
     },
     {
@@ -589,7 +602,7 @@
         807,
         987
       ],
-      "content": "$$R _ {c} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {3}}$$",
+      "content": "$$ R _ {c} = \\frac {R _ {1} R _ {2} + R _ {2} R _ {3} + R _ {1} R _ {3}}{R _ {3}} $$",
       "source": "glm_ocr"
     },
     {
@@ -607,15 +620,28 @@
     },
     {
       "page": 1,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         95,
-        52,
+        52.0,
         694,
-        113
+        82.5
       ],
-      "content": "Noend : paint oci 2+ compositos se rejaignent Nound essential : 3+ compo",
+      "content": "Noend : paint oci 2+ compositos se rejaignent",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        95,
+        82.5,
+        694,
+        113.0
+      ],
+      "content": "Nound essential : 3+ compo",
       "source": "glm_ocr"
     },
     {
@@ -646,15 +672,28 @@
     },
     {
       "page": 1,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         98,
-        194,
+        194.0,
         977,
-        254
+        224.0
       ],
-      "content": "Branche ess : parcours relié à nouns essentiels sans passer par autre ess Bancle : parcours fermé",
+      "content": "Branche ess : parcours relié à nouns essentiels sans passer par autre ess",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 1,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        98,
+        224.0,
+        977,
+        254.0
+      ],
+      "content": "Bancle : parcours fermé",
       "source": "glm_ocr"
     },
     {
@@ -797,7 +836,7 @@
         389,
         675
       ],
-      "content": "$$v _ {o c} = 1 2 i = 4 5 V = V _ {T h}$$",
+      "content": "$$ v _ {o c} = 1 2 i = 4 5 V = V _ {T h} $$",
       "source": "glm_ocr"
     },
     {
@@ -836,7 +875,7 @@
         804,
         816
       ],
-      "content": "$$\\left(\\frac {1}{1 2} + \\frac {1}{2 0}\\right) ^ {- 1} = 7. 5 = R t n$$",
+      "content": "$$ \\left(\\frac {1}{1 2} + \\frac {1}{2 0}\\right) ^ {- 1} = 7. 5 = R t n $$",
       "source": "glm_ocr"
     },
     {
@@ -1101,15 +1140,93 @@
     },
     {
       "page": 4,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         61,
-        51,
+        51.0,
         952,
-        291
+        85.28571428571428
       ],
-      "content": "Noend : paint oui 2+ composants se rejaignent Noand essentiel : 3+ compo parcomrs : chemin avec no campo en double Bronche : parcomrs reliant à noends Bronche ess : parcomrs relié à noends essentiels sans passer par autre ess Banche : parcomrs fermé Maille : banche sans autres banche",
+      "content": "Noend : paint oui 2+ composants se rejaignent",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        85.28571428571428,
+        952,
+        119.57142857142857
+      ],
+      "content": "Noand essentiel : 3+ compo",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L3",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        119.57142857142857,
+        952,
+        153.85714285714286
+      ],
+      "content": "parcomrs : chemin avec no campo en double",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L4",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        153.85714285714286,
+        952,
+        188.14285714285714
+      ],
+      "content": "Bronche : parcomrs reliant à noends",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L5",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        188.14285714285714,
+        952,
+        222.42857142857142
+      ],
+      "content": "Bronche ess : parcomrs relié à noends essentiels sans passer par autre ess",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L6",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        222.42857142857142,
+        952,
+        256.7142857142857
+      ],
+      "content": "Banche : parcomrs fermé",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L7",
+      "task_type": "text",
+      "bbox_norm": [
+        61,
+        256.7142857142857,
+        952,
+        291.0
+      ],
+      "content": "Maille : banche sans autres banche",
       "source": "glm_ocr"
     },
     {
@@ -1231,15 +1348,28 @@
     },
     {
       "page": 4,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         668,
-        579,
+        579.0,
         924,
-        649
+        614.0
       ],
-      "content": "Méthode spécifié intra maybe final too",
+      "content": "Méthode spécifié intra",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        668,
+        614.0,
+        924,
+        649.0
+      ],
+      "content": "maybe final too",
       "source": "glm_ocr"
     },
     {
@@ -1309,15 +1439,28 @@
     },
     {
       "page": 4,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         80,
-        665,
+        665.0,
         610,
-        696
+        680.5
       ],
-      "content": "- Écrire les équations LKC des nœuds essentiels restants ($n_e$-1 équations LKC) – Courants inconnus exprimés en fonction des tensions et résistances (éventuellement impédances)",
+      "content": "- Écrire les équations LKC des nœuds essentiels restants ($n_e$-1 équations LKC)",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 4,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        80,
+        680.5,
+        610,
+        696.0
+      ],
+      "content": "– Courants inconnus exprimés en fonction des tensions et résistances (éventuellement impédances)",
       "source": "glm_ocr"
     },
     {
@@ -1491,15 +1634,28 @@
     },
     {
       "page": 5,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         69,
-        767,
+        767.0,
         342,
-        839
+        803.0
       ],
-      "content": "$ V_{1} $ $ 4 i_{1}+i_{2}=i_{8} $ $ V_{2} $ $ 5=3 i_{1}+i_{2}+i_{4} $",
+      "content": "$ V_{1} $ $ 4 i_{1}+i_{2}=i_{8} $",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 5,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        69,
+        803.0,
+        342,
+        839.0
+      ],
+      "content": "$ V_{2} $ $ 5=3 i_{1}+i_{2}+i_{4} $",
       "source": "glm_ocr"
     },
     {
@@ -1512,7 +1668,7 @@
         787,
         857
       ],
-      "content": "$$\\begin{array}{l} i _ {1} = \\frac {5 0 - V _ {1}}{6} i _ {2} = \\frac {V _ {2} - V _ {1}}{2} \\\\ i _ {8} = V _ {1} / 8 i _ {4} = V _ {2} / 4 \\\\ \\end{array}$$",
+      "content": "$$ \\begin{array}{l} i _ {1} = \\frac {5 0 - V _ {1}}{6} i _ {2} = \\frac {V _ {2} - V _ {1}}{2} \\\\ i _ {8} = V _ {1} / 8 i _ {4} = V _ {2} / 4 \\\\ \\end{array} $$",
       "source": "glm_ocr"
     },
     {
@@ -1525,7 +1681,7 @@
         847,
         995
       ],
-      "content": "$$\\left. \\begin{array}{l l} V _ {1}: \\frac {4}{6} (5 Q - V _ {1}) + \\frac {V _ {2} - V _ {1}}{2} = \\frac {V _ {1}}{8} \\\\ V _ {2}: 5 = \\frac {3}{6} (5 Q - V _ {1}) + \\frac {V _ {2} - V _ {1}}{2} + \\frac {V _ {2}}{4} \\end{array} \\right\\} \\rightarrow T i \\mathrm {s o l v e} \\Rightarrow D V _ {1} = 3 Q V V _ {2} = 1 6 V$$",
+      "content": "$$ \\left. \\begin{array}{l l} V _ {1}: \\frac {4}{6} (5 Q - V _ {1}) + \\frac {V _ {2} - V _ {1}}{2} = \\frac {V _ {1}}{8} \\\\ V _ {2}: 5 = \\frac {3}{6} (5 Q - V _ {1}) + \\frac {V _ {2} - V _ {1}}{2} + \\frac {V _ {2}}{4} \\end{array} \\right\\} \\rightarrow T i \\mathrm {s o l v e} \\Rightarrow D V _ {1} = 3 Q V V _ {2} = 1 6 V $$",
       "source": "glm_ocr"
     },
     {
@@ -1538,7 +1694,7 @@
         899,
         137
       ],
-      "content": "$$\\begin{array}{l} i _ {1} = \\frac {5 0 - 3 2}{6} = 3 A i _ {2} = \\frac {3 2 - 1 6}{2} = 8 A i _ {4} = 8 A i _ {8} = 4 A \\\\ p = V i \\\\ \\end{array}$$",
+      "content": "$$ \\begin{array}{l} i _ {1} = \\frac {5 0 - 3 2}{6} = 3 A i _ {2} = \\frac {3 2 - 1 6}{2} = 8 A i _ {4} = 8 A i _ {8} = 4 A \\\\ p = V i \\\\ \\end{array} $$",
       "source": "glm_ocr"
     },
     {
@@ -1556,15 +1712,28 @@
     },
     {
       "page": 6,
-      "label": "text",
+      "label": "text_L1",
       "task_type": "text",
       "bbox_norm": [
         54,
-        216,
+        216.0,
         871,
-        275
+        245.5
       ],
-      "content": "- Est-ce que la source de 6 volts absorbe ou délivre de la puissance? $i = i$ sans blum + i sans vert",
+      "content": "- Est-ce que la source de 6 volts absorbe ou délivre de la puissance?",
+      "source": "glm_ocr"
+    },
+    {
+      "page": 6,
+      "label": "text_L2",
+      "task_type": "text",
+      "bbox_norm": [
+        54,
+        245.5,
+        871,
+        275.0
+      ],
+      "content": "$i = i$ sans blum + i sans vert",
       "source": "glm_ocr"
     },
     {

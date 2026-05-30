@@ -5,11 +5,17 @@
 PDF_DPI = 200
 
 # --- Layout detection ---
-LAYOUT_DEVICE = cpu
+LAYOUT_DEVICE = cuda
 LAYOUT_THRESHOLD = 0.3
 
-# --- LM Studio (fallback for circuits/images/OCR correction) ---
+# --- LM Studio (Phase 3: VLM image analysis) ---
 LM_STUDIO_HOST = http://100.76.47.104:1234/v1
+
+# --- LM Studio Phase 1 layout (optional, cross-platform alternative to PP-DocLayoutV3) ---
+# Uncomment to enable LM Studio layout detection when CUDA is unavailable.
+# Override with --lm-studio-phase1=<url> on CLI.
+# LM_STUDIO_PHASE1_HOST = http://100.76.47.104:1234/v1
+# LM_STUDIO_PHASE1_MODEL = mistralai/ministral-3-3b
 
 # --- LM Studio prompts ---
 LM_PROMPTS_FILE = lm_prompts.txt

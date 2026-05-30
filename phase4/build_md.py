@@ -120,12 +120,12 @@ def try_docling(pdf_path):
 
 def main():
     parser = argparse.ArgumentParser(description="Phase 4: Build Final Markdown")
-    parser.add_argument("zones_json", help="Phase 3 zones JSON file")
+    parser.add_argument("zones_json", help="Zones JSON file")
     parser.add_argument(
         "--output-dir", "-o", default="./output", help="Output directory"
     )
     parser.add_argument(
-        "--docling", help="Optional: try Docling on this PDF for comparison"
+        "--docling", help="PDF path for Docling conversion"
     )
     args = parser.parse_args()
 
@@ -136,29 +136,32 @@ def main():
     out = Path(args.output_dir)
     out.mkdir(parents=True, exist_ok=True)
 
-    with open(args.zones_json, encoding="utf-8") as f:
-        data = json.load(f)
-
-    zones = data["zones"]
-    pdf_dims = data.get(
-        "pdf_dims", [{"width": 612, "height": 792}] * data.get("num_pages", 1)
-    )
-
-    print(f"[Phase 4] Building final markdown from zones JSON")
-    print(f"  Zones: {len(zones)}, Pages: {len(pdf_dims)}")
+    print(f"[Phase 4] Building final markdown")
     t0 = time.time()
 
-    md = format_final_markdown(zones, pdf_dims)
-    md = fix_markdown_strict(md)
+    md = None
 
+    # Try Docling first if PDF provided
     if args.docling and os.path.isfile(args.docling):
-        print(f"  Trying Docling on {args.docling}...")
+        print(f"  Running Docling on {args.docling}...")
         docling_md = try_docling(args.docling)
-        if docling_md:
-            if len(docling_md) > len(md) * 0.5:
-                print(f"  Docling output available ({len(docling_md)} bytes)")
-                (out / "final_docling_raw.md").write_text(docling_md, encoding="utf-8")
-                print(f"  Saved Docling raw output for reference")
+        if docling_md and len(docling_md.strip()) > 50:
+            md = docling_md
+            print(f"  Docling succeeded ({len(md)} bytes)")
+        else:
+            print(f"  Docling failed or empty, falling back to zones")
+
+    # Fallback to zones-based markdown
+    if not md:
+        with open(args.zones_json, encoding="utf-8") as f:
+            data = json.load(f)
+        zones = data["zones"]
+        pdf_dims = data.get(
+            "pdf_dims", [{"width": 612, "height": 792}] * data.get("num_pages", 1)
+        )
+        print(f"  Building from zones: {len(zones)} zones, {len(pdf_dims)} pages")
+        md = format_final_markdown(zones, pdf_dims)
+        md = fix_markdown_strict(md)
 
     final_path = out / "final.md"
     final_path.write_text(md, encoding="utf-8")

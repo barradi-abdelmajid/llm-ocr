@@ -77,29 +77,49 @@ def free_gpu_memory(verbose: bool = True) -> None:
             pass
 
 
-def load_hf_model(model_id: str, task_type: str = "causal_lm", **kwargs):
+def load_hf_model(
+    model_id: str, task_type: str = "causal_lm", load_in_4bit: bool = False, **kwargs
+):
     """Load a HuggingFace model on GPU, freeing memory first.
 
     Args:
         model_id: HuggingFace model ID
         task_type: "causal_lm" (text gen) or "vision_lm" (VLM)
+        load_in_4bit: enable 4-bit quantization (requires bitsandbytes)
         **kwargs: passed to from_pretrained
 
     Returns: (model, processor/tokenizer)
     """
     free_gpu_memory(verbose=True)
 
-    from transformers import AutoModelForCausalLM, AutoProcessor, AutoTokenizer
+    from transformers import (
+        AutoModelForCausalLM,
+        AutoModelForImageTextToText,
+        AutoProcessor,
+        AutoTokenizer,
+    )
+    from transformers import BitsAndBytesConfig
+
+    quant_kwargs = {}
+    if load_in_4bit:
+        quant_kwargs["quantization_config"] = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=kwargs.pop("bnb_4bit_compute_dtype", None)
+            or "float16",
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4",
+        )
 
     if task_type == "vision_lm":
         processor = AutoProcessor.from_pretrained(
             model_id, trust_remote_code=True, **kwargs
         )
-        model = AutoModelForCausalLM.from_pretrained(
+        model = AutoModelForImageTextToText.from_pretrained(
             model_id,
             device_map="auto",
             torch_dtype="auto",
             trust_remote_code=True,
+            **quant_kwargs,
             **kwargs,
         )
         model.eval()
@@ -113,6 +133,7 @@ def load_hf_model(model_id: str, task_type: str = "causal_lm", **kwargs):
             device_map="auto",
             torch_dtype="auto",
             trust_remote_code=True,
+            **quant_kwargs,
             **kwargs,
         )
         model.eval()

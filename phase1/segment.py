@@ -14,8 +14,6 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from PIL import Image
-from glmocr.config import LayoutConfig
-from glmocr.layout import PPDocLayoutDetector
 
 
 def pdf_to_images(pdf_path: str, dpi: int = 200) -> tuple:
@@ -35,6 +33,9 @@ def pdf_to_images(pdf_path: str, dpi: int = 200) -> tuple:
 
 
 def run_layout_detection(page_images, device="cpu", threshold=0.3):
+    from glmocr.config import LayoutConfig
+    from glmocr.layout import PPDocLayoutDetector
+
     cfg = LayoutConfig(
         model_dir="PaddlePaddle/PP-DocLayoutV3_safetensors",
         threshold=threshold,
@@ -111,13 +112,30 @@ def run_layout_detection(page_images, device="cpu", threshold=0.3):
         detector.stop()
 
 
+def cuda_available() -> bool:
+    try:
+        import torch
+        return torch.cuda.is_available()
+    except Exception:
+        return False
+
+
+def _read_config(key: str, default: str = "") -> str:
+    config_path = Path(__file__).resolve().parent.parent / "config.txt"
+    if config_path.exists():
+        for line in config_path.read_text(encoding="utf-8").splitlines():
+            if line.strip().startswith(key):
+                return line.split("=", 1)[1].strip()
+    return default
+
+
 def main():
     parser = argparse.ArgumentParser(description="Phase 1: Layout Segmentation")
     parser.add_argument("pdf", help="Path to PDF file")
     parser.add_argument(
         "--output-dir", "-o", default="./phases", help="Output directory"
     )
-    parser.add_argument("--device", default="cpu", help="Device for layout detection")
+    parser.add_argument("--device", default="cpu", help="Device for PP-DocLayoutV3")
     parser.add_argument(
         "--threshold", type=float, default=0.3, help="Detection threshold"
     )
@@ -126,6 +144,19 @@ def main():
         "--visualize",
         action="store_true",
         help="Save visualization PDF with colored zones",
+    )
+    parser.add_argument(
+        "--lm-studio",
+        nargs="?",
+        const="auto",
+        default=None,
+        metavar="URL",
+        help="Use LM Studio vision model for layout detection (optionally specify URL)",
+    )
+    parser.add_argument(
+        "--lm-model",
+        default="",
+        help="LM Studio model name for layout detection"
     )
     args = parser.parse_args()
 
@@ -143,10 +174,43 @@ def main():
     page_images, pdf_dims = pdf_to_images(args.pdf, dpi=args.dpi)
     print(f"  {len(page_images)} pages loaded in {time.time() - t0:.1f}s")
 
+    # Determine layout engine
+    lm_url = None
+    if args.lm_studio == "auto":
+        # Auto-detect: use LM Studio only when CUDA is unavailable
+        config_lm = _read_config("LM_STUDIO_HOST", "")
+        if not cuda_available() and config_lm:
+            lm_url = config_lm
+            print(f"  CUDA not detected, falling back to LM Studio layout: {lm_url}")
+    elif args.lm_studio:
+        lm_url = args.lm_studio
+    elif args.lm_studio is None:
+        # Not specified; check config.txt for LM_STUDIO_PHASE1
+        config_val = _read_config("LM_STUDIO_PHASE1_HOST", "")
+        if config_val:
+            lm_url = config_val
+            print(f"  Using LM Studio layout (config): {config_val}")
+
     t1 = time.time()
-    layout_results, vis_images = run_layout_detection(
-        page_images, device=args.device, threshold=args.threshold
-    )
+    if lm_url:
+        from phase1.lm_layout import run_lm_layout_detection
+
+        model = args.lm_model or _read_config("LM_STUDIO_PHASE1_MODEL", "") or "mistralai/ministral-3-3b"
+        print(f"  Layout engine: LM Studio ({lm_url})")
+        print(f"  Model: {model}")
+        layout_results, vis_images = run_lm_layout_detection(
+            page_images, lm_url=lm_url, model=model, dpi=args.dpi,
+        )
+    else:
+        device = args.device
+        if device == "cuda" and not cuda_available():
+            device = "cpu"
+            print(f"  CUDA requested but not available. Falling back to CPU.")
+        print(f"  Layout engine: PP-DocLayoutV3 ({device})")
+        layout_results, vis_images = run_layout_detection(
+            page_images, device=device, threshold=args.threshold
+        )
+
     total = sum(len(r) for r in layout_results)
     print(f"  {total} regions detected in {time.time() - t1:.1f}s")
 
