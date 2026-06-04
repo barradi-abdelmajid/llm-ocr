@@ -1,3 +1,5 @@
+# still in développement. nearly ready
+
 # Circuit Theory PDF → Markdown Pipeline
 
 Local French circuit-theory PDF-to-Markdown pipeline. Runs on an RTX 4050 6GB laptop (iGPU for display, dGPU for compute).
